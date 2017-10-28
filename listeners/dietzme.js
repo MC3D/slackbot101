@@ -22,7 +22,7 @@ function getRandomResponse() {
 module.exports = function(bot) {
   bot.registerListener(null, function(bot, message, slackbotCallback) {
     var resp = {};
-    let user = '333U7RC4A4MR';
+    let user = 'U7RC4A4MR';
 
     console.log('mesg', message.user);
     if (message.user !== user) {
