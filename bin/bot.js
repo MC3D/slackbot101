@@ -12,14 +12,15 @@ var bot = new Bot({
 require('../core/commands')(bot);
 
 // register any custom commands here
-require('../commands/statuscat')(bot);
-require('../commands/catme')(bot);
-require('../commands/twitter')(bot);
-require('../commands/weather')(bot);
+// require('../commands/statuscat')(bot);
+// require('../commands/catme')(bot);
+// require('../commands/twitter')(bot);
+// require('../commands/weather')(bot);
 
 // register any custom listeners here
-require('../listeners/cheezburger')(bot);
+// require('../listeners/cheezburger')(bot);
 require('../listeners/dietzme')(bot);
-require('../listeners/clemson')(bot);
+require('../listeners/tiger')(bot);
+require('../listeners/dadjokes')(bot);
 
 bot.run();

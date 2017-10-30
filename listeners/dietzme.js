@@ -22,10 +22,10 @@ function getRandomResponse() {
 module.exports = function(bot) {
   bot.registerListener(null, function(bot, message, slackbotCallback) {
     var resp = {};
-    let user = 'U7RC4A4MR';
+    let user = 'U0L3UC4E8';
+    let channel = 'C69L2CJV8';
 
-    console.log('mesg', message.user);
-    if (message.user !== user) {
+    if (message.user !== user || message.channel !== channel) {
       return;
     }
 
